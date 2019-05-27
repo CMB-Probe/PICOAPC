@@ -1,0 +1,74 @@
+\documentclass[PICOReport.tex]{subfiles}
+
+\begin{document}
+
+\begin{table}[tb]
+\caption{Relative characteristics of ground, balloon, and space platforms for experiments in the CMB bands.\label{tab:comparison}}
+\begingroup
+%\openup 5pt
+\newdimen\tblskip \tblskip=5pt
+\nointerlineskip
+\vskip -5mm
+\footnotesize %\footnotesize
+\setbox\tablebox=\vbox{
+    \newdimen\digitwidth
+    \setbox0=\hbox{\rm 0}
+    \digitwidth=\wd0
+    \catcode`*=\active
+    \def*{\kern\digitwidth}
+%
+    \newdimen\signwidth
+    \setbox0=\hbox{+}
+    \signwidth=\wd0
+    \catcode`!=\active
+    \def!{\kern\signwidth}
+%
+\halign to \textwidth{
+\hbox to 1.8in{#\leaderfil}\tabskip=0.6em plus 0.6em&
+#\hfil&
+#\hfil&
+#\hfil\tabskip=0pt\cr
+\noalign{\doubleline}
+\omit\hfil{\bf Characteristic}\hfil&\omit\hfil{\bf Ground}\hfil&\omit\hfil{\bf Balloon}\hfil&\omit\hfil{\bf Space}\hfil\cr
+\noalign{\vskip 3pt\hrule\vskip 5pt}
+Sky coverage&Partial from single site&Partial from single flight&Full\cr
+\noalign{\vskip 3pt}
+Frequency coverage&70~GHz inaccessible,$^{a}$&70~GHz inaccessible,$^{a}$&Unrestricted\cr
+\omit                       &$\nu \ge 300$\,GHz unusable,&otherwise, almost unlimited&\cr
+\omit                       &limited atmospheric windows&&\cr
+\noalign{\vskip 3pt}
+Angular resolution at 150\,GHz\,$^{b}$& $1.\!'5$ with 6\,m telescope&$6'$ with 1.5\,m telescope&$6'$ with 1.5\,m telescope \cr
+\noalign{\vskip 3pt}
+Detector noise\,$^{c}$&$265\,\mu$K$_{\rm CMB}\sqrt{\rm s}$& $162\,\mu$K$_{\rm CMB}\sqrt{\rm s}$ & $38\,\mu$K$_{\rm CMB}\sqrt{\rm s}$ \cr
+\noalign{\vskip 3pt}
+Integration time  &  Unlimited, with interruptions & Weeks, continuous  & Several years, continuous \cr
+\noalign{\vskip 3pt}
+Repairability, Upgradeability & Good & None; multiple flights possible & None \cr
+\noalign{\vskip 5pt\hrule\vskip 3pt}
+} % close halign
+\noindent {$^{a}$}~70\,GHz is the frequency at which large angular scale $B$-mode Galactic emissions have a minimum (Fig.~\ref{fig:pico-channels-and-fg}).
+\qquad {$^{b}$}~We give representative telescope apertures. Significantly larger apertures for balloons and in space result in higher mass, volume, and cost.
+\qquad {$^{c}$}~The noise-equivalent temperatures given are illustrative of general capabilities. Detailed comparisons depend on detector heat-sink temperatures, bandwidths, and other factors that differ among specific implementations. Ground -- median detector noise at 95\,GHz from BICEP3~\citep{kang20182017}; balloon -- median detector noise at 94\,GHz from SPIDER~\citep{privatecommunication}; space -- 90\,GHz from PICO CBE.    
+} % close vbox
+\endPlancktable
+\endgroup
+\end{table}
+
+Since the first \ac{CMB} measurements, more than 50 years ago, important observations have been made from the ground, from balloons, and from space. Each of the CMB satellites flown to date -- \cobe, \wmap, and \planck\ -- has relied on technologies and experience that were the result of sub-orbital efforts. PICO is no different. Examples include: the arrays of micro-fabricated, multi-color pixels and the multiplexed readout that are baselined for the PICO focal plane are a consequence of this decade's technical developments (\S\,\ref{sec:focal_plane}, \S\,\ref{sec:detector_readout}); and the recent results from \planck \ and ground-based experiments that established the need for a multitude of frequency bands to characterize and control foregrounds.  A healthy sub-orbital program is essential for the success of PICO. 
+
+%\comor{original text above this line}
+
+The phenomenal success and the immense science outcomes of past space missions are a direct consequence of their relative advantages (Table~\ref{tab:comparison}). In every respect, with the exception of repairability and upgradeability, space has the advantage. When the entire sky is needed, as for measurements on the largest angular scales, space is by far the most suitable platform.  When broad frequency coverage is needed, space will be required to reach the ultimate limits set by astronomical foregrounds because ground-based observations are limited to a handful of atmospheric windows, mostly below 300~GHz. Balloons can provide useful information at higher frequencies, but their limited observing time limits \ac{SNR}. The stability offered in space can not be matched on any other platform, and it translates to superb control of systematic uncertainties. %There is consensus within the CMB community that for levels of $r \lesssim 0.01$ the challenges in the measurement are the ability to remove Galactic emissions (\S~\ref{sec:signal_separation}) and to control systematic uncertainties (\S~\ref{sec:systematics}). 
+
+The relative advantages of a space mission used to come with higher costs relative to sub-orbital experiments. However, this balance now shifts. To make further advances in CMB science it is now required to mount massive ground-based efforts.  By the early 2020s, S3 experiments plan to implement more than 100,000 detectors in 9 receivers in Chile and the South Pole. The total cost is in the vicinity of \$100M. The cost for a subsequent scale-up, a $\sim$500,000-detector ground-based CMB experiment planned for the next decade, is squarely within the cost window of this Probe. Even at that cost, the PICO goal of reaching $r = 5 \times 10^{-4}\,(5 \sigma) $ is beyond the reach of sub-orbital observations in the foreseeable future.  
+
+%There is consensus within the CMB community that for levels of $r \lesssim 0.01$ the challenges in the measurement are the ability to remove Galactic emissions and to control systematic uncertainties. 
+For measuring $r$ and for achieving the other PICO SOs, a space-based platform is either necessary or has strong advantages.  For science requiring higher angular resolution, such as observations of galaxy clusters with 1 arcmin resolution at 150~GHz, the ground has an advantage. An appropriately large aperture on the ground will also provide high-resolution information at lower frequencies, which may be important for separating Galactic emissions at high $\ell$. We therefore recommend to pursue a space mission in the next decade, and to complement it with a ground-based program that will overlap in $\ell$ space, and will add science at the highest angular resolution, beyond the reach of a space mission.
+
+%A recommended plan for the next decade is therefore to pursue a space mission, and complement it with a ground program that will overlap in $\ell$ space, and will add science at the highest angular resolution, beyond the reach of a space mission.
+
+Balloon observations have been exceedingly valuable in the past, and will continue to play an important role through making measurements at frequency bands above 280~GHz. Because balloon observations are largely free from the noise induced by atmospheric turbulence, they are suited for probing the low $\ell$ multipoles. The balloon environment is the best available for elevating the TRL of relevant technologies. 
+
+
+\end{document}
+
