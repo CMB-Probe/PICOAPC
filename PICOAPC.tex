@@ -169,55 +169,15 @@
 
 \pagenumbering{gobble}
 
-%% Karl Young adding cover page as full page pdf.
-
-%\includepdf{images/PICO_Cover_v2-4.pdf} %Full resolution cover
-%\includepdf{images/PICO_Cover_v6_s.pdf} %Low resolution cover for faster pdf.
-
-
-%%
-
-%\LARGE{ \centerline{\bf{The Probe of Inflation and Cosmic Origins}}}
-%\vspace{1.5in}
-%%\Large{ \centerline{A Space Mission Study Report}}
-%%\Large{ \centerline{December, 2018 }}
-%%\vspace{0.5in}
-%%\parindent = 0pt
-%%\large{Principal Investigator:} \\
-%%\large{Steering Committee:} \\
-%%\large{Executive Committee:} \\
-%%\large{Contributors:} \\
-%%\large{Endorsers:} \\
-%
-%\normalsize
-%
-%\vspace{0.35in}
-%\begin{figure}[!thb]
-%%\begin{center}
-%\hspace{-0.25in}
-%\includegraphics[width=7.0in]{images/PICO_science goals and probes.png}
-%%\end{center}
-%%\hspace{-0.15in}
-%%\caption{PICO science goals and probes}
-%\label{fig:PICOsci_probes}
-%\end{figure}
 
 \parindent = 15pt
 
-\newpage
-\newpage
-%\twocolumn
-
-%test figure in main file
-%
 \pagenumbering{roman}
 \setcounter{page}{1}
 
-% Author list on seperate pages
 \subfile{coverpage.tex}
 %
-{
-\begin{centering}
+{ \begin{centering}
 \small
 {***}\\
 \smallskip
@@ -230,10 +190,10 @@
 {The cost information contained in this document is of a budgetary and planning nature and is intended for informational purposes only.  It does not constitute a commitment on the part of JPL and/or Caltech.}\\
 %\bigskip
 
-%{\copyright\ 2018. All rights reserved.}\\
-\end{centering}
-}
+\end{centering} }
+
 \newpage
+
 {
              % KY: making table of contents links black instead of red.
 \hypersetup{linkcolor=black}
@@ -246,32 +206,19 @@
 
 
 \section{Executive Summary} % (2 pg, Hanany)}
-\subfile{executive.tex}
+\subfile{executive_apc.tex}
 
-\section{Science}
+\section{Key Science Goals and Objectives}
 \label{sec:science}
 
-\subsection{Introduction} % (1.5 pgs)}
+%\subsection{Introduction} % (1.5 pgs)}
 
-
-%{\it NASA suggested table of contents says Science Intro or Landscape section should include: State of the Art in the Field ; Compelling Outstanding Questions; Needed Capabilities for Progress. }
-
-\subfile{Introduction.tex}
-
-%\vspace{-0.18in}
-
-%\subsection{Science Objectives} % (17.5 pgs) }
-
-%\vspace{-0.05in}
-
-
-
+%\subfile{Introduction_apc.tex}
 
 \subsection{Fundamental Physics} %(6 pgs)
 \label{sec:fundamentalsci}
-%\vspace{-0.05in}
 
-\subfile{fundamentalsci.tex}
+\subfile{fundamentalsci_apc.tex}
 
 %\vspace{-0.05in}
 
