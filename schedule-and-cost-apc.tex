@@ -19,13 +19,15 @@
 \vspace{-0.05in}
 \end{figure}
 
+\input tables/table6.1_wrap.tex
 $\bullet$ {\bf Schedule} \hspace{0.1in} NASA-funded Probe studies including PICO assume a Phase~A start in October 2023. PICO development phases B-D are similar in duration to recent comparably sized NASA missions such as Juno and SMAP. PICO is a cryogenic mission similar to \planck , but the cryogenic design is simpler because all PICO's bolometric detectors are maintained at 0.1~K (\planck 's bolometers were maintained at 0.1~K, and the radiometers at 20~K).  We used experience from \planck\ and from current implementations of ground-based kilo-pixel arrays  to allocate appropriate time and budget for integration and testing (I\&T) throughout all stages of the development; in most cases, significantly more time was provided in the schedule for I\&T compared to that allocated for \planck . 
 
 The baseline mission lifetime is 5 years. The PICO instrument does not have cryogenic consumables (as Planck did), permitting mission extension beyond the prime mission duration. \comred{Mission extensions will be limited by availability of fuel for hydrazine thrusters.}
 
 %\subsection{Cost}
 %\label{sec:mission_cost}
-\input tables/table6.1_wrap.tex
+
+%\input tables/table6.1_wrap.tex
 
 %\input tables/abridged_table6.1_wrap.tex
 
@@ -35,7 +37,7 @@ JPL Team~X and the PICO team mission cost breakdown. Team~X estimates are genera
 Science team costs are assessed by Team~X based on PICO science team estimates of the numbers and types of contributors and meetings required for each year of PICO mission development and operations. These workforce estimates are informed by recent experience with the \planck\ mission. PICO's spacecraft cost reflects a robust Class~B architecture. Mission-critical elements are redundant. Appropriate flight spares, engineering models and prototypes are included. Mission operations, Ground Data Systems, and Mission Navigation and Design costs reflect the relatively simple concept of operations: PICO has a single instrument and a single science observing mode. 
 
 The active cooling system (the 0.1\,K cADR and 4\,K cryocooler) comprises nearly half of the payload cost. The cADR cost for this study is an estimate from Goddard Space Flight Center. The 4\,K cryocooler cost for this study is based on the NASA Instrument Cost Model (NICM) VIII CER Cryocooler model
-\cite{Mrozinski2017}, assuming a commercial build. Based on JPL experience, 18\,\% of the instrument cost is allocated for integration and testing (I\&T). 
+\cite{Mrozinski2017}, assuming a commercial build. Based on JPL experience, 18\,\% of the instrument cost is allocated for integration and testing (I\&T). More details on the cost of PICO are available in the full PICO report~\citep{picoreport_arxiv}.
 
 % Amy's text below
 %PICO's total development and operations cost is estimated to be between \$870M and \$960M (Table~\ref{tab:cost}). Estimates are based on the current PICO design, which is a robust Class~B architecture appropriate to this medium class mission. All appropriate flight spares, engineering models, and prototypes are included. The mission costs include \$19M for the science team during  development and \$20M during operations, based on science team workforce estimates informed by experience with the \planck mission. Pre-Phase-A technology maturation will be accomplished through the normal APRA and SAT processes, and is not included in the mission cost. The PICO Team estimates the total cost of the required technology maturation to be about \$13M. \comred{move this to the other section.}
@@ -52,4 +54,6 @@ The active cooling system (the 0.1\,K cADR and 4\,K cryocooler) comprises nearly
 \label{sec:heritage} %6.3
 
 PICO's reflectors are similar to \planck 's, but somewhat larger ($270 \,\, {\rm cm} \times 205\,{\rm cm}$ primary versus $189\,{\rm cm} \times 155\,{\rm cm}$)~\citep{Gloesener2006}. \textit{Herschel} observed at shorter wavelengths that required higher surface accuracy and had a larger reflector ($350\, \,{\rm cm}$ diameter primary)~\citep{Toulemont2004}. PICO's detectors are cooled by a cADR with requirements that are within the capabilities of current ADRs developed by Goddard Space Flight Center. These systems have been applied to several JAXA missions, including \textit{Hitomi}~\citep{Shirron2016}. PICO's 4\,K cryocooler (\S\,\ref{sec:4kcooler}) is a direct extension of the JWST MIRI design~\citep{Durand2008,Rabb2013}. PICO benefits from a simpler and more reliable implementation of the J-T system than was required for MIRI, in that no deployment of cooling lines is required, and all flow valving is performed on the warm spacecraft. Structures similar to PICO's V-groove radiator assembly are a standard approach for passive cooling, and were first described more than thirty years ago~\citep{Bard1987}. PICO's spin system is less demanding than the successful SMAP spin system. The PICO spin rate is 1\,rpm, and the mission requires $\sim220$\,N\,m\,s of spin angular momentum cancellation. The PICO's data volume and downlink rates are already surpassed by missions in development. 
+
+%\end{document}
 
