@@ -94,7 +94,7 @@ alignment tolerances. The open-Dragone design does not require the more massive 
 The detailed geometric parameterization of the PICO optical design is described by~\citet{Young2018}. The primary reflector (270\,cm $\times$ 205\,cm) is passively cooled and the secondary reflector (160\,cm $\times$ 158\,cm) is actively cooled. The highest frequency (900\,GHz) sets the surface accuracy and coating requirement of the reflectors at $\lambda/14 =24\,\mu{\rm m}$. The focal ratio is 1.42. The slightly concave focal surface, which has a radius of curvature of 4.55~m, is telecentric to within $0\pdeg12$ across the entire FOV.
 
 %\comblue{what about the reflector material?}
-An actively cooled circular aperture stop between the primary and secondary reflectors reduces optical background loading and shields the focal plane from stray radiation. Stray-light analysis of the PICO open-Dragone design using GRASP confirms that the focal plane is protected from direct view of the sky, and that spillover past the primary is suppressed by 80~dB relative to the main lobe for both co-pol and cross-pol beams. Detailed baffle design will be performed during mission formulation.
+An actively cooled aperture stop between the primary and secondary reflectors reduces optical background loading and shields the focal plane from stray radiation. Stray-light analysis of the PICO open-Dragone design using GRASP confirms that the focal plane is protected from direct view of the sky, and that spillover past the primary is suppressed by 80~dB relative to the main lobe for both co-pol and cross-pol beams. Detailed baffle design will be performed during mission formulation.
 
 % \begin{figure}
 % \begin{center}
@@ -113,7 +113,7 @@ An actively cooled circular aperture stop between the primary and secondary refl
 The layout of the PICO focal plane is shown in Fig.~\ref{fig:FocalPlaneMechanical} and detailed in Table~\ref{tab:focal_plane}. 
 %A conceptual layout of the PICO focal-plane is shown in Fig.~\ref{fig:FocalPlaneMechanical} and detailed in Table~\ref{tab:focal_plane}.
 
-The sensitivity of PICO\rq s detectors is limited by the irreducible backgrounds. Therefore, the required sensitivity determines the detector count in each band. The PICO focal plane has 12,996 detectors, 175~times the number flown aboard \planck , thereby providing a breakthrough increase in sensitivity
+The sensitivity of PICO\rq s detectors is limited by the irreducible backgrounds. Therefore, the required sensitivity determines the detector count in each band. The PICO focal plane has 12,996 detectors, 175~times the number flown aboard \planck , thereby providing the required increase in raw sensitivity
 \begin{wrapfigure}{r}{0.45\textwidth}
 \vskip -8pt
 \hfill
@@ -128,7 +128,7 @@ with a comparably sized telescope. This breakthrough is enabled by development a
 \label{sec:low_freq_det} % 3.2.1
 \vspace{0.02in}
 
-Several optical-coupling technologies have matured over the past ten years to efficiently use focal-plane area: horns with ortho-mode transducers (OMTs) \citep{Duff2016}; lithographed antenna arrays~\citep{BICEP2015}; and sinuous antennas under lenslets~\citep{Edwards2012}. Horn-coupling and sinuous antenna/lenslet-coupling deliver quantum efficiency $>70\,\%$ over more than an octave of bandwidth, which have been partitioned into two or three colors per pixel.  Only single-color pixels have been demonstrated to date with antenna-arrays, but this coupling enables smaller pixels and therefore they can be more densely packed.
+Several optical-coupling technologies have matured over the past ten years to efficiently use focal-plane area: horns with ortho-mode transducers (OMTs) \citep{Duff2016}; lithographed antenna arrays~\citep{BICEP2015}; and sinuous antennas under lenslets~\citep{Edwards2012}. Horn-coupling and sinuous antenna/lenslet-coupling deliver quantum efficiency $>70\,\%$ over more than an octave of bandwidth, which have been partitioned into two or three colors per pixel. Multi color antenna-arrays have recently been demonstrated in lab testing, and will be deployed on sub-orbital instruments as early as 2019. This coupling enables smaller pixels and therefore they can be more densely packed.
 %%%%%%%%
 \input tables/table3.1_wrap.tex
 %%%%%%%%
@@ -151,7 +151,7 @@ The waveguide cut-off defines the lower edge of the band, and quasi-optical meta
 \subsubsection{Polarimetry}
 \label{sec:polarimetry} %3.2.3
 
-Polarimetry is achieved by differencing the signals from pairs of two co-pointed bolometers within a pixel that are sensitive to two orthogonal polarization states. Half the pixels in the focal plane are sensitive to the $Q$ and half to the $U$ Stokes parameters of the incident radiation. Two layouts for the distribution of the $Q$ and $U$ pixels on the focal plane have been investigated~\citep{picoweb_QU}; both would satisfy mission requirements. Stokes $I$ is obtained from the sum of the signals of orthogonal detectors.  
+Polarimetry is achieved by measuring the signals from pairs of two co-pointed bolometers within a pixel that are sensitive to two orthogonal linear polarization states. Half the pixels in the focal plane are sensitive to the $Q$ and half to the $U$ Stokes parameters of the incident radiation, providing sensitivity to the Stokes $I$, $Q$, and $U$ parameters. Two layouts for the distribution of the $Q$ and $U$ pixels on the focal plane have been investigated~\citep{picoweb_QU}; both satisfy mission requirements. %Stokes $I$ is obtained from the sum of the signals of orthogonal detectors.  
 
 \subsubsection{Sensitivity}
 \label{sec:sensitivity} %3.2.3
