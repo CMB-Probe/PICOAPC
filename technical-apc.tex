@@ -18,7 +18,8 @@
 %\label{fig:ArchitectureBlockDiagram} }  
 %\end{wrapfigure}
 
-PICO meets all of its science-derived instrument requirements (\S\,\ref{sec:requirements}) with a single instrument: an imaging polarimeter with 21 logarithmically spaced frequency bands centered between 21 and 799\,GHz (Table~\ref{tab:STM}). The instrument has a two-reflector Dragone-style telescope (\S\,\ref{sec:telescope} and Fig.~\ref{fig:InstrumentCAD}). The focal plane is populated by 12,996 \ac{TES} bolometers (\S\,\ref{sec:focal_plane}) and read out using a time-domain multiplexing scheme (\S\,\ref{sec:detector_readout}). PICO employs a single science observing mode: fixed rate imaging while scanning the sky (\S~\ref{sec:survey_design}). 
+PICO is designed to meet all the science-driven instrument requirements (\S\,\ref{sec:requirements}) with a single instrument: an imaging polarimeter with 21 logarithmically spaced frequency bands centered between 21 and 799\,GHz, each with with a 25\% fractional bandwidth (Table~\ref{tab:STM}). The instrument has a passively cooled offset Dragone-style telescope (\S\,\ref{sec:telescope} and Fig.~\ref{fig:InstrumentCAD}). The focal plane is populated by arrays of TES bolometers (\S\,\ref{sec:focal_plane}) and read out using a time-domain multiplexing scheme (\S\,\ref{sec:detector_readout}).  PICO is a closed cycle cryogenic instrument, employing both passive and active cooling stages.  PICO operates from the Earth-Sun L2 and employs a single science observing mode, providing highly redundant coverage of the full sky(\S~\ref{sec:survey_design}). A functional block diagram of the instrument is shown in Figure~\ref{fig:ArchitectureBlockDiagram}. 
+
 \begin{figure}[h] 
 \hspace{-0.1in}
 \parbox{5.1in}{\centerline{
@@ -32,13 +33,21 @@ PICO overall configuration in side view and cross section (left), and front view
 \vspace{-0.1in}
 \end{figure}
 
-The instrument is configured inside the shadow of a V-groove assembly that thermally and optically shields it from the Sun (Fig.~\ref{fig:InstrumentCAD} and \S\,\ref{sec:radiative_cooling}). 
+%%WCJ Begin comment here  - move to later cooling section section
+%The instrument is configured inside the shadow of a V-groove assembly that shields it thermally and optically from the Sun (Fig.~\ref{fig:InstrumentCAD} and \S\,\ref{sec:radiative_cooling}). 
 %The V-groove assembly consists of four nested radiation shields that provide passive cooling (\S\,\ref{sec:radiative_cooling}). 
-The Sun shadow cone depicted in Fig.~\ref{fig:InstrumentCAD} is $29\degree$. The angle to the Sun during the survey, $\alpha = 26\degree$ (\S\,\ref{sec:survey_design} and Fig.~\ref{fig:MissionDesignFigure}), is supplemented with a margin of $3\degree$ to account for the radius of the Sun ($0\pdeg25$), pointing control error, design margin, and alignment tolerances.
+%The shadow cone depicted in Fig.~\ref{fig:InstrumentCAD} is $29\degree$. The angle to the Sun during the survey, $\alpha = 26\degree$ (\S\,\ref{sec:survey_design} and Fig.~\ref{fig:MissionDesignFigure}), is supplemented with a margin of $3\degree$ to account for the radius of the Sun ($0\pdeg25$), pointing control error, design margin, and alignment tolerances.
 
-The V-groove assembly is attached to the bipod struts that support the instrument structural ring. The ring supports the primary reflector and telescope box. The telescope box contains the actively cooled components (\S\,\ref{sec:cadr}, \S\,\ref{sec:4kcooler}), including the secondary reflector, the focal plane and sub-kelvin refrigerator structures. Just inside the box, a thermal liner serves as a cold optical baffle and aperture stop. Instrument integration and test are described in \S\,\ref{sec:iandt}.
+%The V-groove assembly is attached to the bipod struts that support the instrument structural ring. The ring supports the primary reflector and telescope box. The telescope box contains the actively cooled components (\S\,\ref{sec:cadr}, \S\,\ref{sec:4kcooler}), including the secondary reflector, the focal plane and sub-kelvin refrigerator structures. Just inside the box, a thermal liner serves as a cold optical baffle and aperture stop. Instrument integration and test are described in \S\,\ref{sec:iandt}.
 
-During the survey, the instrument is spun at 1~rpm and the spin axis is made to precess about the anti-Sun direction (\S\,\ref{sec:survey_design}). Spacecraft control is simplified by mounting the instrument on a spinning spacecraft module, while a larger non-spinning module houses most spacecraft subsystems (\S\,\ref{sec:spacecraft}). Instrument elements that act as heat sources are accommodated on the spinning module of the spacecraft. Only power and digital data lines cross between the spinning and non-spinning modules.  A functional block diagram of the instrument is shown in Figure~\ref{fig:ArchitectureBlockDiagram}. 
+%% END WCJ Comment -
+
+%% begin wcj comment - move to scan section
+
+%During the survey, the instrument is spun at 1~rpm and the spin axis is made to precess about the anti-Sun direction (\S\,\ref{sec:survey_design}). Spacecraft control is simplified by mounting the instrument on a spinning spacecraft module, while a larger non-spinning module houses most spacecraft subsystems (\S\,\ref{sec:spacecraft}). Instrument elements that act as heat sources are accommodated on the spinning module of the spacecraft. Only power and digital data lines cross between the spinning and non-spinning modules.
+
+
+%% end wcj comment
 
 \begin{figure}[h]
 \hspace{-0.in}
