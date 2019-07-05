@@ -18,7 +18,7 @@
 %\label{fig:ArchitectureBlockDiagram} }  
 %\end{wrapfigure}
 
-PICO is designed to meet all the science-driven instrument requirements (\S\,\ref{sec:requirements}) with a single instrument: an imaging polarimeter with 21 logarithmically spaced frequency bands centered between 21 and 799\,GHz, each with with a 25\% fractional bandwidth (Table~\ref{tab:STM}). The instrument has a passively cooled offset Dragone-style telescope (\S\,\ref{sec:telescope} and Fig.~\ref{fig:InstrumentCAD}). The focal plane is populated by arrays of TES bolometers (\S\,\ref{sec:focal_plane}) and read out using a time-domain multiplexing scheme (\S\,\ref{sec:detector_readout}).  PICO is a closed cycle cryogenic instrument, employing both passive and active cooling stages.  PICO operates from the Earth-Sun L2 and employs a single science observing mode, providing highly redundant coverage of the full sky(\S~\ref{sec:survey_design}). A functional block diagram of the instrument is shown in Figure~\ref{fig:ArchitectureBlockDiagram}. 
+PICO is designed to meet all the science-driven instrument requirements (\S\,\ref{sec:requirements}) with a single instrument: an imaging polarimeter with 21 logarithmically spaced frequency bands centered between 21 and 799\,GHz, each with with a 25\% fractional bandwidth (Table~\ref{tab:STM}). The instrument has a passively cooled open Dragone-style telescope (\S\,\ref{sec:telescope} and Fig.~\ref{fig:InstrumentCAD}). The focal plane is populated by arrays of single-moded TES bolometers (\S\,\ref{sec:focal_plane}) and read out using a time-domain multiplexing scheme (\S\,\ref{sec:detector_readout}).  PICO is a closed cycle cryogenic instrument, employing both passive and active cooling stages.  PICO operates from the Earth-Sun L2 and employs a single science observing mode, providing highly redundant coverage of the full sky(\S~\ref{sec:survey_design}). A functional block diagram of the instrument is shown in Figure~\ref{fig:ArchitectureBlockDiagram}. 
 
 \begin{figure}[h] 
 \hspace{-0.1in}
@@ -34,9 +34,10 @@ PICO overall configuration in side view and cross section (left), and front view
 \end{figure}
 
 %%WCJ Begin comment here  - move to later cooling section section
-%The instrument is configured inside the shadow of a V-groove assembly that shields it thermally and optically from the Sun (Fig.~\ref{fig:InstrumentCAD} and \S\,\ref{sec:radiative_cooling}). 
-%The V-groove assembly consists of four nested radiation shields that provide passive cooling (\S\,\ref{sec:radiative_cooling}). 
-%The shadow cone depicted in Fig.~\ref{fig:InstrumentCAD} is $29\degree$. The angle to the Sun during the survey, $\alpha = 26\degree$ (\S\,\ref{sec:survey_design} and Fig.~\ref{fig:MissionDesignFigure}), is supplemented with a margin of $3\degree$ to account for the radius of the Sun ($0\pdeg25$), pointing control error, design margin, and alignment tolerances.
+
+%The V-groove assembly consists of four nested radiation shields that
+%provide passive cooling (\S\,\ref{sec:radiative_cooling}).
+
 
 %The V-groove assembly is attached to the bipod struts that support the instrument structural ring. The ring supports the primary reflector and telescope box. The telescope box contains the actively cooled components (\S\,\ref{sec:cadr}, \S\,\ref{sec:4kcooler}), including the secondary reflector, the focal plane and sub-kelvin refrigerator structures. Just inside the box, a thermal liner serves as a cold optical baffle and aperture stop. Instrument integration and test are described in \S\,\ref{sec:iandt}.
 
@@ -77,12 +78,23 @@ The PICO telescope design is driven by a combination of science requirements and
 %\label{fig:ArchitectureBlockDiagram} }  }
 %\end{figure}
 
-The PICO optical design was selected following a trade study examining cross-Dragone, Gregorian Dragone, and open-Dragone designs~\citep{Young2018}.  The open-Dragone and crossed-Dragone systems offer more diffraction-limited focal-plane area than the Gregorian Dragone one~\citep{deBernardis2018} and are able to support enough detectors to provide the required sensitivity. The open-Dragone design does not require the more massive and voluminous baffles that the cross-Dragone does, and hence can satisfy the aperture size requirement within the shadow cone.
+The PICO optical design was selected following a trade study examining cross-Dragone, Gregorian Dragone, and open-Dragone designs~\citep{Young2018}.  The open-Dragone and crossed-Dragone systems offer more diffraction-limited focal-plane area than the Gregorian Dragone one~\citep{deBernardis2018} and are able to support enough detectors to provide the required sensitivity.
 
-PICO's initial open-Dragone design~\citep{dragone78, granet2001} has been modified with the addition of an aperture stop and adding corrections to the primary and secondary reflectors to enlarge the DLFOV. The detailed geometric parameterization of the PICO optical design is described by~\citet{Young2018}. The primary reflector (270\,cm $\times$ 205\,cm) is passively cooled and the secondary reflector (160\,cm $\times$ 158\,cm) is actively cooled. The highest frequency (900\,GHz) sets the surface accuracy requirement of the reflectors at $\lambda/14 =24\,\mu{\rm m}$. The focal ratio is 1.42. The slightly concave focal surface, which has a radius of curvature of 4.55~m, is telecentric to within $0\pdeg12$ across the entire FOV.
+The instrument is configured inside the shadow of a V-groove assembly
+that shields it thermally and optically from the Sun
+(Fig.~\ref{fig:InstrumentCAD} and \S\,\ref{sec:radiative_cooling}).
+The shadow cone depicted in Fig.~\ref{fig:InstrumentCAD} is $29\degree$. The
+angle to the Sun during the survey, $\alpha = 26\degree$
+(\S\,\ref{sec:survey_design} and Fig.~\ref{fig:MissionDesignFigure}),
+is supplemented with a margin of $3\degree$ to account for the radius
+of the Sun ($0\pdeg25$), pointing control error, design margin, and
+alignment tolerances. The open-Dragone design does not require the more massive and voluminous baffles that the cross-Dragone does, and hence can satisfy the aperture size requirement within the shadow cone.
+
+%PICO's initial open-Dragone design~\citep{dragone78, granet2001} has been modified with the addition of an aperture stop and adding corrections to the primary and secondary reflectors to enlarge the DLFOV.
+The detailed geometric parameterization of the PICO optical design is described by~\citet{Young2018}. The primary reflector (270\,cm $\times$ 205\,cm) is passively cooled and the secondary reflector (160\,cm $\times$ 158\,cm) is actively cooled. The highest frequency (900\,GHz) sets the surface accuracy and coating requirement of the reflectors at $\lambda/14 =24\,\mu{\rm m}$. The focal ratio is 1.42. The slightly concave focal surface, which has a radius of curvature of 4.55~m, is telecentric to within $0\pdeg12$ across the entire FOV.
 
 %\comblue{what about the reflector material?}
-An actively cooled circular aperture stop between the primary and secondary reflectors reduces detector noise and shields the focal plane from stray radiation. Stray-light analysis of the PICO open-Dragone design using GRASP confirms that the focal plane is protected from direct view of the sky, and that spillover past the primary is suppressed by 80~dB relative to the main lobe for both co-pol and cross-pol beams. Detailed baffle design will be performed during mission formulation.
+An actively cooled circular aperture stop between the primary and secondary reflectors reduces optical background loading and shields the focal plane from stray radiation. Stray-light analysis of the PICO open-Dragone design using GRASP confirms that the focal plane is protected from direct view of the sky, and that spillover past the primary is suppressed by 80~dB relative to the main lobe for both co-pol and cross-pol beams. Detailed baffle design will be performed during mission formulation.
 
 % \begin{figure}
 % \begin{center}
@@ -97,11 +109,11 @@ An actively cooled circular aperture stop between the primary and secondary refl
 % wrap version of figure 3.3.  Unwrapped version is below.
 
 
-PICO's focal plane is populated by an array of \ac{TES} bolometers operating in 21 frequency bands, each with 25\% fractional bandwidth, and band centers ranging from 21 to 799~GHz. 
+%PICO's focal plane is populated by an array of \ac{TES} bolometers operating in 21 frequency bands, each with 25\% fractional bandwidth, and band centers ranging from 21 to 799~GHz. 
 The layout of the PICO focal plane is shown in Fig.~\ref{fig:FocalPlaneMechanical} and detailed in Table~\ref{tab:focal_plane}. 
 %A conceptual layout of the PICO focal-plane is shown in Fig.~\ref{fig:FocalPlaneMechanical} and detailed in Table~\ref{tab:focal_plane}.
 
-Bolometers operating in the mm/sub-mm wave band are photon-noise limited. Therefore, increase in sensitivity is achieved through an increase in detector count. The PICO focal plane has 12,996 detectors, 175~times the number flown aboard \planck , thereby providing a breakthrough increase in sensitivity
+The sensitivity of PICO\rq s detectors is limited by the irreducible backgrounds. Therefore, the required sensitivity determines the detector count in each band. The PICO focal plane has 12,996 detectors, 175~times the number flown aboard \planck , thereby providing a breakthrough increase in sensitivity
 \begin{wrapfigure}{r}{0.45\textwidth}
 \vskip -8pt
 \hfill
