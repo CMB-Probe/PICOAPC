@@ -79,24 +79,21 @@ The focal plane is integrated with the reflectors and structures, and alignment 
 
 \vspace{-0.03in}
 
-The PICO concept of operations is similar to that of the successful \wmap~\citep{Bennett2003} and \planck~\citep{Tauber2010} missions. After launch, PICO cruises to a quasi-halo orbit around the Earth--Sun L2 Lagrange point. A two-week decontamination period is followed by instrument cooldown, lasting about two months. After in-orbit checkout is complete, PICO begins its science survey. During the survey the instrument spins around the spacecraft's symmetry axis at 1~RPM. The symmetry axis precesses around the anti-sun direction with a period of 10~hours; See Figure~\ref{fig:MissionDesignFigure}. This survey ensures that each sky pixel is revisited along many orientations, which is optimal for polarimetric measurements. Nearly 50\% of the sky are surveyed every two weeks. The entire sky is covered in 6 months. Over the 5 year duration, PICO executes 10 independent full sky surveys, giving high redundancy for identifying systematic uncertainties. 
+The PICO concept of operations is similar to that of the successful \wmap~\citep{Bennett2003} and \planck~\citep{Tauber2010} missions. After launch, PICO cruises to a quasi-halo orbit around the Earth--Sun L2 Lagrange point. A two-week decontamination period is followed by instrument cooldown, lasting about two months. After in-orbit checkout is complete, PICO begins its science survey, depicted in Figure~\ref{fig:MissionDesignFigure}.  This survey ensures that each sky pixel is revisited along many orientations, which is optimal for polarimetric measurements. 
+%Nearly 50\% of the sky are surveyed every two weeks. The entire sky is covered in 6 months. 
+Over the 5 year duration, PICO executes 10 independent full sky surveys, giving high redundancy for identifying systematic uncertainties. 
 
-\begin{figure}[!b]
-  \begin{minipage}[b]{0.29\textwidth}
-    \begin{center}
-    \includegraphics[width=1.5in]{figures/InFairing.JPG}
-\caption{\captiontext PICO is compatible with the Falcon~9.\label{fig:InFairing}}
-    \end{center}
-  \end{minipage}
-\hfill
-\begin{minipage}[b]{0.67\textwidth}
-    \begin{center}
-    \includegraphics[width=4in]{figures/MissionDesignFigure.png}
+\begin{figure}[h] 
+\hspace{-0.5in}
+\parbox{4.0in}{\centerline{
+\includegraphics[width=2.5in]{figures/MissionDesignFigure.png} } }
+\hspace{-0.6in}
+\parbox{3.5in}{
 \caption{\captiontext
-  PICO surveys by continuously spinning the instrument about a
-  precessing axis.\label{fig:MissionDesignFigure}}
-   \end{center}
-  \end{minipage}
+PICO surveys the sky by spinning the instrument about the spacecraft's symmetry axis at 1~RPM. The telescope boresight is tilted by $\beta=69^{\rm{o}}$ from that axis. The symmetry axis precesses around the anti-sun direction with a period of 10~hours; $\alpha=29^{\rm{o}}$. Nearly 50\% of the sky are surveyed every two weeks. The entire sky is covered in 6 months. 
+\label{fig:MissionDesignFigure}} }
+%\end{center}
+\vspace{-0.15in}
 \end{figure}
 
 Instrument data are compressed and stored on-board, then returned to Earth in daily 4-hr Ka-band science downlink passes (concurrent with science observations). High data-rate downlink to the Deep Space Network (DSN) is available from L2 using near-Earth Ka bands. We assumed a launch with the Falcon~9. Its capability for ocean recovery exceeds PICO's 2147\,kg total launch mass (including contingency) by a $50\,\%$ margin.
