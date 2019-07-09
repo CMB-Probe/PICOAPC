@@ -1,0 +1,99 @@
+%\begin{wraptable}[13]{r}{0.43\textwidth}
+%\vskip -2mm
+%\hskip1.4cm
+%\begin{minipage}[t]{0.3\textwidth}
+%\caption{\textbf{Mission Parameters}\label{tab:specs}}
+%\begingroup
+%%\openup 5pt
+%\newdimen\tblskip \tblskip=5pt
+%\nointerlineskip
+%\vskip -7mm
+%\footnotesize %\footnotesize
+%\setbox\tablebox=\vbox{
+%    \newdimen\digitwidth
+%    \setbox0=\hbox{\rm 0}
+%    \digitwidth=\wd0
+%    \catcode`*=\active
+%    \def*{\kern\digitwidth}
+%%
+%    \newdimen\signwidth
+%    \setbox0=\hbox{+}
+%    \signwidth=\wd0
+%    \catcode`!=\active
+%    \def!{\kern\signwidth}
+%%
+%\halign{%
+%\hbox to 1.4in{#\leaderfil}\tabskip=0.6em plus 0.6em&
+%#\hfil\tabskip=0pt\cr
+%\noalign{\doubleline}
+%\multispan2 Full sky CMB polarization map depth$^{a}$ :\hfil\cr
+%\quad Baseline&0.87 $\mu$K$_{\rm CMB}$ arcmin\cr
+%\hskip1.75cm equivalent to 3300 \textit{Planck} missions\cr
+%\quad CBE$^{b}$&0.61 $\mu$K$_{\rm CMB}$ arcmin\cr
+%\hskip1.75cm equivalent to 6400 \textit{Planck} missions\cr
+%Survey duration / start & 5\,yrs / 2029 \cr
+%Orbit type & Sun-Earth L2 \cr
+%Launch mass & 2147\,kg \cr
+%Total power &1320\,W \cr
+%Data rate & 6.1\,Tbits/day \cr
+%Cost&\$\,958M\cr
+%%Launch&2029\cr
+%\noalign{\vskip 5pt\hrule\vskip 3pt}
+%\noalign{$^{a}$ rms noise in $1\times1$ arcmin$^{2}$ pixel.} % footnote to table
+%\noalign{$^{b}$ CBE = Current best estimate.} % footnote to table
+%} % close halign
+%} % close vbox
+%\endPlancktable
+%\endgroup
+%%\end{table}
+%\end{minipage}
+
+%\end{wraptable}
+
+% Start second table
+%\vskip0.5cm
+%\hskip0.2cm
+
+\begin{wraptable}[23]{r}{0.43\textwidth}
+\vskip -2mm
+%\hskip1.4cm
+\begin{minipage}[t]{0.4\textwidth}
+\footnotesize
+\caption{\textbf{Frequency Bands, Resolution, and Noise Level}\label{tab:spec_bands}}
+\vskip -2mm
+\begin{tabular}{|c|c|c|c|}
+\hline
+Frequency& FWHM& \multicolumn{2}{c|}{Polarization map depth}  \\ 
+\cline{3-4}
+& & Baseline & CBE  \\
+ \space [GHz] & [arcmin]  & [$\mu$K$_{\rm CMB}$]$^{a}$ & [$\mu$K$_{\rm CMB}]^{a}$ \\ \hline
+21 & 38.4 & 23.9 & 16.9 \\ 
+25 & 32.0 & 18.4 & 13.0 \\ 
+30& 28.3 & 12.4 & 8.7 \\ 
+36& 23.6 & 7.9 & 5.6 \\ 
+43& 22.2 & 7.9 & 5.6 \\ 
+52& 18.4 & 5.7 & 4.0 \\ 
+62& 12.8 & 5.4 & 3.8 \\ 
+75& 10.7 & 4.2 & 3.0 \\ 
+90 & 9.5 & 2.8 & 2.0 \\ 
+108 & 7.9 & 2.3 & 1.6\\ 
+129 & 7.4 & 2.1 & 1.5 \\ 
+155 & 6.2 & 1.8 & 1.3 \\ 
+186 & 4.3 & 4.0 & 2.8 \\ 
+223 & 3.6 & 4.5 & 3.2 \\ 
+268 & 3.2 & 3.1 & 2.2 \\ 
+321 & 2.6 & 4.2 & 3.0 \\ 
+385 & 2.5 & 4.5 & 3.2 \\ 
+462 & 2.1 & 9.1 & 6.4 \\ 
+555 & 1.5 & 45.8 & 32.4 \\ 
+666 & 1.3 & 177 & 125 \\ 
+799 & 1.1 & 1050 & 740 \\ 
+\noalign{\vskip 0pt\hrule\vskip 3pt}
+\noalign{$^{a}$ For units in [Jy/sr] see~\citet{pico_report}.} % footnote to table
+
+\end{tabular}
+
+%\end{table}
+\end{minipage}
+\end{wraptable}
+
